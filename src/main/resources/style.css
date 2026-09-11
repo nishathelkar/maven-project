@@ -1,0 +1,1047 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: rgba(5, 5, 5, 0.95);
+
+    border-bottom: 1px solid #222;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #00e5ff;
+}
+
+nav ul {
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+nav ul a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+nav ul a:hover {
+    color: #00e5ff;
+
+    text-shadow: 0 0 10px #00e5ff;
+}
+
+.nav-button {
+    text-decoration: none;
+
+    color: white;
+
+    padding: 10px 22px;
+
+    border: 1px solid #00e5ff;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #00e5ff;
+
+    color: black;
+
+    box-shadow: 0 0 25px #00e5ff;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 90vh;
+
+    padding: 80px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background:
+            radial-gradient(
+                    circle at 20% 50%,
+                    #001d26,
+                    transparent 40%
+            ),
+
+            radial-gradient(
+                    circle at 80% 30%,
+                    #1e0033,
+                    transparent 40%
+            );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-heading {
+    color: #00e5ff;
+
+    letter-spacing: 5px;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 90px;
+
+    line-height: 1;
+
+    letter-spacing: 5px;
+}
+
+.hero h1 span {
+    color: #00e5ff;
+
+    text-shadow:
+            0 0 10px #00e5ff,
+            0 0 30px #00e5ff;
+}
+
+.hero h2 {
+    margin-top: 20px;
+
+    font-size: 25px;
+
+    color: #ff00cc;
+}
+
+.hero-text {
+    color: #999;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin: 25px 0;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: #00e5ff;
+
+    color: black;
+
+    box-shadow:
+            0 0 20px
+            rgba(0, 229, 255, 0.5);
+}
+
+.primary-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+            0 0 40px #00e5ff;
+}
+
+.secondary-button {
+    color: #ff00cc;
+
+    border: 1px solid #ff00cc;
+}
+
+.secondary-button:hover {
+    background: #ff00cc;
+
+    color: white;
+
+    box-shadow:
+            0 0 30px #ff00cc;
+}
+
+
+/* ================= TERMINAL ================= */
+
+.hero-image {
+    width: 430px;
+}
+
+.terminal {
+    background: #0c0c0c;
+
+    border: 1px solid #333;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+            0 0 30px
+            rgba(0, 229, 255, 0.2);
+}
+
+.terminal-top {
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding-left: 15px;
+
+    background: #151515;
+}
+
+.terminal-top span {
+    width: 11px;
+    height: 11px;
+
+    border-radius: 50%;
+
+    background: #555;
+}
+
+.terminal-code {
+    padding: 25px;
+
+    font-family: monospace;
+
+    line-height: 2;
+}
+
+.green {
+    color: #00ff88;
+}
+
+.blue {
+    color: #00aaff;
+}
+
+.purple {
+    color: #b000ff;
+}
+
+.success {
+    color: #00ff88;
+
+    margin-top: 10px;
+}
+
+
+/* ================= COMMON ================= */
+
+.section {
+    padding: 110px 10%;
+}
+
+.section-label {
+    color: #00e5ff;
+
+    letter-spacing: 4px;
+
+    font-size: 12px;
+
+    margin-bottom: 20px;
+}
+
+.section h2,
+.benefits h2,
+.comparison h2,
+.tools h2 {
+    font-size: 50px;
+
+    margin-bottom: 50px;
+}
+
+h2 span {
+    color: #ff00cc;
+}
+
+
+/* ================= DEVOPS ================= */
+
+.content-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.content-text p {
+    color: #aaa;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* DevOps Illustration */
+
+.devops-illustration {
+    height: 300px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+.dev-circle,
+.ops-circle {
+    width: 130px;
+
+    height: 130px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.dev-circle {
+    background: #ff00cc;
+
+    box-shadow:
+            0 0 35px #ff00cc;
+}
+
+.ops-circle {
+    background: #00e5ff;
+
+    color: black;
+
+    box-shadow:
+            0 0 35px #00e5ff;
+}
+
+.infinity {
+    font-size: 100px;
+
+    color: white;
+
+    margin: 0 -25px;
+
+    z-index: 2;
+
+    text-shadow:
+            0 0 20px white;
+}
+
+
+/* ================= BENEFITS ================= */
+
+.benefits {
+    padding: 100px 10%;
+
+    background:
+            linear-gradient(
+                    180deg,
+                    #080808,
+                    #10001b
+            );
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    padding: 30px;
+
+    background: #101010;
+
+    border: 1px solid #222;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #888;
+
+    line-height: 1.6;
+}
+
+.cyan:hover {
+    border-color: #00e5ff;
+
+    box-shadow: 0 0 25px
+    rgba(0,229,255,0.3);
+}
+
+.purple:hover {
+    border-color: #9b00ff;
+
+    box-shadow: 0 0 25px
+    rgba(155,0,255,0.3);
+}
+
+.pink:hover {
+    border-color: #ff00cc;
+
+    box-shadow: 0 0 25px
+    rgba(255,0,204,0.3);
+}
+
+.orange:hover {
+    border-color: #ff9100;
+
+    box-shadow: 0 0 25px
+    rgba(255,145,0,0.3);
+}
+
+
+/* ================= GIT / GITHUB ================= */
+
+.git-section {
+    background: #070707;
+}
+
+.github-section {
+    background:
+            radial-gradient(
+                    circle at 80% 50%,
+                    #17002a,
+                    #050505 50%
+            );
+}
+
+.tool-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.tool-layout.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.tool-content h3 {
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.tool-content > p {
+    color: #aaa;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Git Logo */
+
+.tool-image {
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 20px;
+
+    border: 1px solid #222;
+}
+
+.git-image {
+    background:
+            radial-gradient(
+                    circle,
+                    #2b1000,
+                    #080808
+            );
+}
+
+.git-logo {
+    font-size: 80px;
+
+    color: #f05032;
+
+    transform: rotate(-5deg);
+
+    text-shadow:
+            0 0 30px #f05032;
+}
+
+.git-logo span {
+    font-size: 30px;
+}
+
+
+/* GitHub Logo */
+
+.github-image {
+    background:
+            radial-gradient(
+                    circle,
+                    #26003d,
+                    #080808
+            );
+}
+
+.github-logo {
+    font-size: 130px;
+
+    color: white;
+
+    text-shadow:
+            0 0 30px #ff00cc;
+}
+
+.github-image h3 {
+    letter-spacing: 8px;
+}
+
+
+/* Commands */
+
+.command-box {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #050505;
+
+    border-left: 3px solid #f05032;
+
+    font-family: monospace;
+
+    line-height: 2;
+
+    color: #aaa;
+}
+
+.command-box span {
+    color: #00ff88;
+}
+
+
+/* GitHub features */
+
+.github-features {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.github-features div {
+    padding: 15px;
+
+    background: #111;
+
+    border: 1px solid #222;
+
+    border-radius: 8px;
+
+    color: #aaa;
+}
+
+.github-features strong {
+    display: block;
+
+    color: #ff00cc;
+
+    margin-bottom: 5px;
+}
+
+
+/* ================= COMPARISON ================= */
+
+.comparison {
+    padding: 110px 10%;
+
+    text-align: center;
+
+    background: #080808;
+}
+
+.comparison-container {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.comparison-card {
+    width: 350px;
+
+    padding: 35px;
+
+    background: #111;
+
+    border-radius: 15px;
+
+    border: 1px solid #222;
+
+    text-align: left;
+}
+
+.git-card:hover {
+    border-color: #f05032;
+
+    box-shadow: 0 0 30px
+    rgba(240,80,50,0.2);
+}
+
+.github-card:hover {
+    border-color: #ff00cc;
+
+    box-shadow: 0 0 30px
+    rgba(255,0,204,0.2);
+}
+
+.comparison-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+.comparison-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.comparison-card p {
+    color: #888;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.comparison-card ul {
+    list-style: none;
+
+    color: #aaa;
+
+    line-height: 2;
+}
+
+.vs {
+    font-size: 25px;
+
+    color: #00e5ff;
+
+    font-weight: bold;
+}
+
+
+/* ================= LIFECYCLE ================= */
+
+.lifecycle {
+    background:
+            radial-gradient(
+                    circle at center,
+                    #001d26,
+                    #050505 65%
+            );
+}
+
+.lifecycle-intro {
+    max-width: 750px;
+
+    color: #999;
+
+    line-height: 1.7;
+
+    margin-bottom: 50px;
+}
+
+.lifecycle-container {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.life-step {
+    width: 160px;
+
+    min-height: 150px;
+
+    padding: 20px;
+
+    background: #0d0d0d;
+
+    border: 1px solid #222;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.life-step:hover {
+    transform: translateY(-8px);
+}
+
+.life-step span {
+    color: #00e5ff;
+
+    font-size: 13px;
+}
+
+.life-step h3 {
+    margin: 15px 0 10px;
+}
+
+.life-step p {
+    color: #777;
+
+    font-size: 13px;
+}
+
+.plan:hover {
+    border-color: #ff00cc;
+}
+
+.code:hover {
+    border-color: #f05032;
+}
+
+.build:hover {
+    border-color: #ff9100;
+}
+
+.test:hover {
+    border-color: #00e5ff;
+}
+
+.release:hover {
+    border-color: #9b00ff;
+}
+
+.deploy:hover {
+    border-color: #00ff88;
+}
+
+.operate:hover {
+    border-color: #00aaff;
+}
+
+.monitor:hover {
+    border-color: #ffd600;
+}
+
+.arrow {
+    color: #555;
+
+    font-size: 25px;
+}
+
+
+/* ================= TOOLS ================= */
+
+.tools {
+    padding: 100px 10%;
+
+    text-align: center;
+
+    background: #090909;
+}
+
+.tool-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.tool-cards div {
+    padding: 25px;
+
+    background: #111;
+
+    border: 1px solid #222;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.tool-cards div:hover {
+    border-color: #00e5ff;
+
+    color: #00e5ff;
+
+    transform: scale(1.04);
+
+    box-shadow:
+            0 0 20px
+            rgba(0,229,255,0.2);
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    padding: 120px 10%;
+
+    text-align: center;
+
+    background:
+            radial-gradient(
+                    circle at center,
+                    #26002e,
+                    #050505 65%
+            );
+}
+
+.contact h2 {
+    max-width: 800px;
+
+    margin: auto;
+
+    margin-bottom: 25px;
+}
+
+.contact > p {
+    color: #999;
+
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 30px 8%;
+
+    border-top: 1px solid #222;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+footer p {
+    color: #666;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        max-width: 500px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .content-grid,
+    .tool-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .comparison-container {
+        flex-direction: column;
+    }
+
+    .lifecycle-container {
+        flex-wrap: wrap;
+    }
+
+    .tool-cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    section h2,
+    .benefits h2,
+    .comparison h2,
+    .tools h2 {
+        font-size: 36px;
+    }
+
+    .cards,
+    .tool-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-card {
+        width: 100%;
+    }
+
+    .github-features {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+}
